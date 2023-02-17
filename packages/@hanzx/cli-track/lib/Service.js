@@ -8,10 +8,10 @@ module.exports = class Service {
   async run(name, args = {}, rawArgv = []) {
     let command = this.commands[name];
     if (!command && name) {
-      error(`command "${name}" does not exist.`);
+      console.error(`command "${name}" does not exist.`);
       process.exit(1);
     }
-
+    console.log(name);
     return run(`vue-cli-service ${name}`, { async: true })
   }
 }

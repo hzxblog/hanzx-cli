@@ -2,9 +2,9 @@
   "name": "@hanzx/cli-track",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "lib/Service.js",
   "bin": {
-    "vue-cli-track": "bin/vue-cli-track"
+    "vue-cli-track": "bin/vue-cli-track.js"
   },
   "directories": {
     "lib": "lib"
